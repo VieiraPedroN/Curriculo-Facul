@@ -1,0 +1,70 @@
+.acordeon {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 1rem 0;
+  border: 1px solid dodgerblue;
+  border-radius: 1rem;
+  transition: background-color 0.25s, border-color 0.25s, color 0.25s;
+}
+
+body.on .acordeon {
+  border-color: dodgerblue;
+}
+
+.acordeon.open,
+.acordeon:hover {
+  background-color: dodgerblue;
+  border-color: dodgerblue;
+  color: white;
+  p,
+  .trigger,
+  p:hover {
+    color: black;
+  }
+}
+
+body.on .acordeon.open,
+body.on .acordeon:hover {
+  color: black;
+  p,
+  .trigger,
+  p:hover {
+    color: white;
+  }
+}
+
+.acordeon .trigger {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+body.on .acordeon .trigger {
+  color: black;
+}
+
+.acordeon .trigger:hover {
+  cursor: pointer;
+}
+
+.acordeon .content {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out, height 0.25s ease-in-out;
+}
+
+.acordeon.open .content {
+  height: auto;
+  opacity: 1;
+  padding: 0 1rem 1rem 1rem;
+}

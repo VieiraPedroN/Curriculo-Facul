@@ -1,0 +1,44 @@
+body {
+  background-color: #2f2f2f;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("../image/home-backgroundDark.png");
+  overflow-x: hidden;
+}
+
+body.on {
+  background-color: honeydew;
+  background-image: url("../image/home-background.png");
+}
+
+header {
+  width: 15%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}

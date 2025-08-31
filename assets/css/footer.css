@@ -1,0 +1,14 @@
+footer {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+footer h2 {
+  font-size: 20px;
+  color: white;
+}
+
+body.on footer h2 {
+  color: black;
+}

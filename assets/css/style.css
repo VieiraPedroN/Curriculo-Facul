@@ -1,0 +1,27 @@
+.container {
+  margin-left: 20rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  color: dodgerblue;
+}
+
+h2 {
+  margin: 0;
+  color: white;
+}
+
+body.on h1 {
+  color: dodgerblue;
+}
+
+body.on h2 {
+  color: black;
+}

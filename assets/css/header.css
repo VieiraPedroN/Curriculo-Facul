@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+
+body.on header a {
+  color: black;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header ul li {
+  padding: 0.5rem;
+  margin-left: 2.5rem;
+  border-bottom: 3px solid dodgerblue;
+  width: 100%;
+}
